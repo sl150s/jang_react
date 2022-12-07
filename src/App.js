@@ -5,7 +5,15 @@ import './App.css';
 
 class App extends Component{
   render(){
-    let myName = "김구라"
+    let myName = "김구라";
+    
+    const boxStyle={
+      width:"100px",
+      height:"100px",
+      border:"1px solid red",
+      backgroundColor:"yellow" //여러단어로 구성된 속성은 camel case를 사용한다.
+    };
+
     return(
       <div className='container'>
       <h1>인덱스 페이지 입니다. </h1>
@@ -24,6 +32,7 @@ class App extends Component{
       <button className="btn btn-primary" onClick={()=>{
         alert("버튼을 눌렀네요 ");
       }}>눌러보셈</button>
+      <div style={boxStyle}>box</div>
     </div>
     );
   }
