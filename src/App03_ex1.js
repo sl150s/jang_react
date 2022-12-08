@@ -33,7 +33,7 @@ class App extends Component{
                 msgs:newArray,
                 index: this.state.index+1
             });
-
+            // 내가한 것 
             // let masgs2 = [];
             // masgs2.push(<li>{msg}</li>);
             // console.log(masgs2);
