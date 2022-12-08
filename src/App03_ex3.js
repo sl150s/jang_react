@@ -1,6 +1,9 @@
 //App03_ex3.js
 
 import { Component } from "react";
+//react 중에서 뭘 import(가져올지)해올지 정할수 있는데, 여러가지 가져올 때, object타입처럼 가져올 수 있다.
+// { component, .. , ... }  
+
 import FriendComponent from "./components/FriendComponent";
 
 class App extends Component{
@@ -12,7 +15,8 @@ class App extends Component{
         return(
             <div className="container">
                 <h1>자식 component 사용 예제</h1>
-                <FriendComponent friends={this.state.friends} deleteClicked={this.deleteClicked}
+                <FriendComponent friends={this.state.friends} 
+                deleteClicked={this.deleteClicked}
                 updateClicked={this.updateClicked}
                 />
             </div>

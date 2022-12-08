@@ -33,3 +33,4 @@ class FriendComponent extends Component{
     }
 }
 export default FriendComponent;
+//FriendComponent를 import하면 FriendComponent클래스를 내보낸다는뜻 
